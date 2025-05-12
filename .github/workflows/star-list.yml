@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   schedule:
     # Execute every week at 0:00 CST (UTC+8), which is 16:00 UTC on the previous day
-    - cron: '0 3 * * *' # 每天 03:00 UTC，即每天 11:00 CST
+    - cron: '0 */6 * * *' # 每天6h
   watch:
     types: [started]
 
